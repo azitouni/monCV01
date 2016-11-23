@@ -1,0 +1,54 @@
+
+
+body{
+  background-color: #7895b4;
+}
+
+.navbar-brand {
+  /*height: 100px;*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.portfolio-link img{
+  margin-left: auto;
+  margin-right: auto;
+}
+ .logo {
+   display: inline-block;
+ }
+
+.myName {
+/*color: white;*/
+font-size: 2rem;
+}
+label,placeholder, .myName,.myJob{
+color: white;
+}
+.myJob {
+/*color: white;*/
+font-size: 1.5rem;
+}
+.myJobWidth {
+  width:350px;
+}
+
+#contact{
+  background-color: lightblue;
+}
+.backTransparent{
+  background-color: transparent;
+}
+
+hr.style13 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px white inset;
+  width: 500px;
+}
+.flatIcon{
+  height: 200px;
+}
+.aboutImg {
+  background-image: url("../img/descktop.jpg");
+}
