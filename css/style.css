@@ -50,9 +50,14 @@ hr.style13 {
   height: 200px;
 }
 .aboutImg {
-  background-image: url("../img/descktop04.png");
-  margin-top: 100px;
-  width:auto;
+  background: url("../img/descktop05.png") 50% 0% no-repeat fixed;
+  background-size: cover;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  width:100%;
   height: 1000px;
-  background-repeat: no-repeat;
+}
+.transparent{
+  background-color: none;
 }
