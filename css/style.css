@@ -19,15 +19,13 @@ body{
  }
 
 .myName {
-/*color: white;*/
-font-size: 2rem;
+  font-size: 2rem;
 }
 label,placeholder, .myName,.myJob{
-color: white;
+  color: white;
 }
 .myJob {
-/*color: white;*/
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .myJobWidth {
   width:350px;
@@ -49,10 +47,17 @@ hr.style13 {
 .flatIcon{
   height: 200px;
 }
+
 .aboutImg {
-  background-image: url("../img/descktop04.png");
-  margin-top: 100px;
-  width:auto;
-  height: 1000px;
-  background-repeat: no-repeat;
+  background: url("../img/descktop.png") 50% 0% no-repeat fixed;
+  height: 800px;
+}
+
+header .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+header {
+  background-image: url("../img/descktopBack.png");
 }
