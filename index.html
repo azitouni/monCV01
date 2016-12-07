@@ -9,7 +9,7 @@
   <title> CV | Site CV Adel Zitouni - Développeur Intégrateur Web</title>
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="vendor/percentageloader/css/jquery.percentageloader-0.1.css">
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -94,535 +94,555 @@
     </div>
   </header>
 
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Curriculum vitæ</h2>
-        <hr class="style13">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-3x">Expérience</i>
-            </div>
-          </div>
-          <img src="img/portfolio/experience.png" class="img-responsive flatIcon" alt="">
-        </a>
-      </div>
-      <div class="col-sm-6 portfolio-item">
-        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-3x">Formation</i>
-            </div>
-          </div>
-          <img src="img/portfolio/graduation.png" class="img-responsive flatIcon" alt="">
-        </a>
-      </div>
-      <div class="col-sm-6 portfolio-item">
-        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-3x">Compétences</i>
-            </div>
-          </div>
-          <img src="img/portfolio/competence.png" class="img-responsive  flatIcon" alt="">
-        </a>
-      </div>
-      <div class="col-sm-6 portfolio-item">
-        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-3x">Hobbies</i>
-            </div>
-          </div>
-          <img src="img/portfolio/hobbies.png" class="img-responsive  flatIcon" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- About Section -->
-<section class="success" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Portfolio</h2>
-        <hr class="style13">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-lg-offset-2">
-        <p>Projet 1</p>
-      </div>
-      <div class="col-lg-4">
-        <p>Projet 2</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Me contacter</h2>
-        <hr class="style13">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-        <form name="sentMessage" id="contactForm" method="post" action="mail/contact_me.php">
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Nom</label>
-              <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Emails</label>
-              <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Téléphone</label>
-              <input type="tel" class="form-control" placeholder="Téléphone" id="phone" required data-validation-required-message="Please enter your phone number.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Message</label>
-              <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <br>
-          <div id="success"></div>
-          <div class="row">
-            <div class="form-group col-xs-12 text-center">
-              <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-  <div class="footer-above">
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-4">
-          <h3>Adresse</h3>
-          <p>34 rue du Thimarais
-            <br>78310, Maurepas (Yvelines)</p>
-          </div>
+        <div class="col-lg-12 text-center">
+          <h2>Curriculum vitæ</h2>
+          <hr class="style13">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-3x">Expérience</i>
+              </div>
+            </div>
+            <img src="img/portfolio/experience.png" class="img-responsive flatIcon" alt="">
+          </a>
+        </div>
+        <div class="col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-3x">Formation</i>
+              </div>
+            </div>
+            <img src="img/portfolio/graduation.png" class="img-responsive flatIcon" alt="">
+          </a>
+        </div>
+        <div class="col-sm-6 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-3x">Compétences</i>
+              </div>
+            </div>
+            <img src="img/portfolio/competence.png" class="img-responsive  flatIcon" alt="">
+          </a>
+        </div>
+        <div class="col-sm-6 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-3x">Hobbies</i>
+              </div>
+            </div>
+            <img src="img/portfolio/hobbies.png" class="img-responsive  flatIcon" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="success" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Portfolio</h2>
+          <hr class="style13">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-2">
+          <p>Projet 1</p>
+        </div>
+        <div class="col-lg-4">
+          <p>Projet 2</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Me contacter</h2>
+          <hr class="style13">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+          <form name="sentMessage" id="contactForm" method="post" action="mail/contact_me.php">
+            <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Nom</label>
+                <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Emails</label>
+                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Téléphone</label>
+                <input type="tel" class="form-control" placeholder="Téléphone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Message</label>
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="row">
+              <div class="form-group col-xs-12 text-center">
+                <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
           <div class="footer-col col-md-4">
-            <h3>Autour du Web</h3>
-            <ul class="list-inline">
-              <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/u/0/101032721609913890605" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-              </li>
-              <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/adel-zitouni-116074134?trk=nav_responsive_tab_profile_pic" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-              </li>
-            </ul>
+            <h3>Adresse</h3>
+            <p>34 rue du Thimarais
+              <br>78310, Maurepas (Yvelines)</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Autour du Web</h3>
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/u/0/101032721609913890605" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/adel-zitouni-116074134?trk=nav_responsive_tab_profile_pic" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Copyright &copy; Adel Zitouni 2016
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; Adel Zitouni 2016
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+      <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
 
-  <!-- Portfolio Modals -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2> Expériences </h2>
-              <hr class="star-primary">
-              <img src="img/portfolio/experience.png" class="img-responsive img-centered  flatIcon" alt="">
-              <div class="row">
-                <div class="col-md-6 text-right">
-                  <ul class="list-inline item-details">
-                    <li>Employeur:
-                      <strong><a href="http://medissimo.fr">Medissimo</a>
-                      </strong>
-                    </li>
-                    <li>Domaine:
-                      <strong>Editeur de logiciel dans le secteur pharmacetique
-                      </strong>
-                    </li>
-                    <li>Poste:
-                      <strong>Ingénieur de développement .Net
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>Dates : Mars 2014 - Aout 2016 (2,5 ans)
-                      </strong>
-                    </li>
-                    <li>Environnement technique:
-                      <strong> Framework .Net 4.5 ; Visual Studio 2010 et 2013 C# (WinForm, ASP .Net, Web Services),SQL Server 2008 R2, SAP Crystal Report, TFS, JIRA.
-                      </strong>
-                    </li>
-                  </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2> Expériences </h2>
+                <hr class="star-primary">
+                <img src="img/portfolio/experience.png" class="img-responsive img-centered  flatIcon" alt="">
+                <div class="row">
+                  <div class="col-md-6 text-right">
+                    <ul class="list-inline item-details">
+                      <li>Employeur:
+                        <strong><a href="http://medissimo.fr">Medissimo</a>
+                        </strong>
+                      </li>
+                      <li>Domaine:
+                        <strong>Editeur de logiciel dans le secteur pharmacetique
+                        </strong>
+                      </li>
+                      <li>Poste:
+                        <strong>Ingénieur de développement .Net
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>Dates : Mars 2014 - Aout 2016 (2,5 ans)
+                        </strong>
+                      </li>
+                      <li>Environnement technique:
+                        <strong> Framework .Net 4.5 ; Visual Studio 2010 et 2013 C# (WinForm, ASP .Net, Web Services),SQL Server 2008 R2, SAP Crystal Report, TFS, JIRA.
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <ul class="item-details">
+                      <li>Développement de projet (client lourd et web services) et nouvelles fonctionnalités</li>
+                      <li>Maintenance corrective et évolutive des projets</li>
+                      <li>Documentation technique</li>
+                      <li>Développement en mode Agile (sprint)</li>
+                      <li>Reporting avec SAP Crystal Report, Report Builder</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-md-6 text-left">
-                  <ul class="item-details">
-                    <li>Développement de projet (client lourd et web services) et nouvelles fonctionnalités</li>
-                    <li>Maintenance corrective et évolutive des projets</li>
-                    <li>Documentation technique</li>
-                    <li>Développement en mode Agile (sprint)</li>
-                    <li>Reporting avec SAP Crystal Report, Report Builder</li>
-                  </ul>
+                <div class="row">
+                  <div class="col-md-6 text-right">
+                    <ul class="list-inline item-details">
+                      <li>Employeur:
+                        <strong><a href="http://Altimate.fr">Altimate</a>
+                        </strong>
+                      </li>
+                      <li>Domaine:
+                        <strong>Entreprise de Service du Numérique (SSII)
+                        </strong>
+                      </li>
+                      <li>Poste:
+                        <strong>Ingénieur de développement .Net
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>Dates : Janvier 2011 - Mars 2014 (3 ans)
+                        </strong>
+                      </li>
+                      <li>Clients:
+                        <strong><a href="http://socotec.fr">Socotec</a>, <a href="http://conservateur.fr">Le Conservateur</a>, <a href="http://eurosport.fr">Eurosport</a>, <a href="http://ppg.com">PPG</a>, <a href="https://www.groupe-psa.com/fr">Groupe PSA</a>
+                        </strong>
+                      </li>
+                      <li>Environnement technique:
+                        <strong> Framework .Net de 2.0 à 4.5 ; Visual Studio C# (WinForm, WebForm ASP Net, Web Services et WCF), SSIS, SSRS, SQL Server 2008 R2, XML.
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <ul class="item-details">
+                      <li>Développement/customisation de sites internet à partir d’un template</li>
+                      <li>Création/customisation de bases de données</li>
+                      <li>Développement de projet en Business Intelligence : SSIS, SSRS</li>
+                      <li>Développement de projet avec le framework du client</li>
+                      <li>Reporting avec Microsoft Reporting Services</li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-6 text-right">
+                    <ul class="list-inline item-details">
+                      <li>Employeur:
+                        <strong><a href="http://elapse.fr">Elapse</a> rachetée par <a href="http://lgm.fr">LGM</a>
+                        </strong>
+                      </li>
+                      <li>Domaine:
+                        <strong>Editeur de logiciel + Entreprise de Service du Numérique (SSII)
+                        </strong>
+                      </li>
+                      <li>Poste:
+                        <strong>Ingénieur de développement .Net
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>Dates : Mars 2009 - Décembre 2010 (environ 2 ans)
+                        </strong>
+                      </li>
+                      <li>Clients:
+                        <strong><a href="https://www.credit-agricole.fr/">Crédit Agricole</a>
+                        </strong>
+                      </li>
+                      <li>Environnement technique:
+                        <strong> Framework 3.5, C# (WinForm, WPF), SQL server Express 2005, Expression Blend 2, XML, WPF, Entity Framework, Access, Oracle, DB2, VB6
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <ul class="item-details">
+                      <li>Migration de projet d’ACCESS vers la technologie .Net</li>
+                      <li>Développement de projet (client lourd) avec Entity Framework et WPF</li>
+                      <li>Création de base de données SQL Server avec des procédures stockées</li>
+                      <li>Maintenance corrective et évolutive</li>
+                      <li>Documentation technique</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 text-right">
+                    <ul class="list-inline item-details">
+                      <li>Employeur:
+                        <strong><a href="http://lms.com">LMS International</a> rachetée par <a href="https://www.plm.automation.siemens.com">Siemens PLM</a>
+                        </strong>
+                      </li>
+                      <li>Domaine:
+                        <strong>Editeur de logiciel dans le secteur Automobile
+                        </strong>
+                      </li>
+                      <li>Poste:
+                        <strong>Ingénieur de développement .Net
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>Dates : Mars 2014 - Aout 2016 (2,5 ans)
+                        </strong>
+                      </li>
+                      <li>Environnement technique:
+                        <strong> Framework .Net 4.5 ; Visual Studio 2010 et 2013 C# (WinForm, ASP .Net, Web Services),SQL Server 2008 R2, SAP Crystal Report, TFS, JIRA.
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <ul class="item-details">
+                      <li>Développement de projet (client lourd et web services) et nouvelles fonctionnalités</li>
+                      <li>Maintenance corrective et évolutive des projets</li>
+                      <li>Documentation technique</li>
+                      <li>Développement en mode Agile (sprint)</li>
+                      <li>Reporting avec SAP Crystal Report, Report Builder</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 text-right">
+                    <ul class="list-inline item-details">
+                      <li>Employeur:
+                        <strong><a href="www.univ-reims.fr">Université de Reims</a> en partenariat avec <a href="https://www.plymouth.fr">Plymouth</a>
+                        </strong>
+                      </li>
+                      <li>Domaine:
+                        <strong>Informatique industrielle et traitement du signal
+                        </strong>
+                      </li>
+                      <li>Poste:
+                        <strong>Doctorant
+                        </strong>
+                      </li>
+                      <li>Date:
+                        <strong>Dates : Janvier 2003 - Novembre 2006 (environ 4 ans)
+                        </strong>
+                      </li>
+                      <li>Environnement technique:
+                        <strong> Matlab, C/C++ Builder, Mathematica
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <ul class="item-details">
+                      <li>Sujet de la thèse : Modélisation, conception et réalisation d’un capteur à courants de Foucault pour l’identification de canalisations enterrées à 1 mètre de profondeur</li>
+                      <li>Publications, articles et revues <a href="https://www.ieee.org">IEEE</a> en anglais</li>
+                      <li>Participation à des conférences internationales: Islande, Luxembourg, Tunisie</li>
+                      <li>Thèse doctorale (environ 200 pages) <a href="http://www.theses.fr/2006REIMS011">Ici</a></li>
+                      <li>Chargé de travaux dirigés et travaux pratiques en Algorithmique et programmation en C </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
               </div>
-              <div class="row">
-                <div class="col-md-6 text-right">
-                  <ul class="list-inline item-details">
-                    <li>Employeur:
-                      <strong><a href="http://Altimate.fr">Altimate</a>
-                      </strong>
-                    </li>
-                    <li>Domaine:
-                      <strong>Entreprise de Service du Numérique (SSII)
-                      </strong>
-                    </li>
-                    <li>Poste:
-                      <strong>Ingénieur de développement .Net
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>Dates : Janvier 2011 - Mars 2014 (3 ans)
-                      </strong>
-                    </li>
-                    <li>Clients:
-                      <strong><a href="http://socotec.fr">Socotec</a>, <a href="http://conservateur.fr">Le Conservateur</a>, <a href="http://eurosport.fr">Eurosport</a>, <a href="http://ppg.com">PPG</a>, <a href="https://www.groupe-psa.com/fr">Groupe PSA</a>
-                      </strong>
-                    </li>
-                    <li>Environnement technique:
-                      <strong> Framework .Net de 2.0 à 4.5 ; Visual Studio C# (WinForm, WebForm ASP Net, Web Services et WCF), SSIS, SSRS, SQL Server 2008 R2, XML.
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 text-left">
-                  <ul class="item-details">
-                    <li>Développement/customisation de sites internet à partir d’un template</li>
-                    <li>Création/customisation de bases de données</li>
-                    <li>Développement de projet en Business Intelligence : SSIS, SSRS</li>
-                    <li>Développement de projet avec le framework du client</li>
-                    <li>Reporting avec Microsoft Reporting Services</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 text-right">
-                  <ul class="list-inline item-details">
-                    <li>Employeur:
-                      <strong><a href="http://elapse.fr">Elapse</a> rachetée par <a href="http://lgm.fr">LGM</a>
-                      </strong>
-                    </li>
-                    <li>Domaine:
-                      <strong>Editeur de logiciel + Entreprise de Service du Numérique (SSII)
-                      </strong>
-                    </li>
-                    <li>Poste:
-                      <strong>Ingénieur de développement .Net
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>Dates : Mars 2009 - Décembre 2010 (environ 2 ans)
-                      </strong>
-                    </li>
-                    <li>Clients:
-                      <strong><a href="https://www.credit-agricole.fr/">Crédit Agricole</a>
-                      </strong>
-                    </li>
-                    <li>Environnement technique:
-                      <strong> Framework 3.5, C# (WinForm, WPF), SQL server Express 2005, Expression Blend 2, XML, WPF, Entity Framework, Access, Oracle, DB2, VB6
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 text-left">
-                  <ul class="item-details">
-                    <li>Migration de projet d’ACCESS vers la technologie .Net</li>
-                    <li>Développement de projet (client lourd) avec Entity Framework et WPF</li>
-                    <li>Création de base de données SQL Server avec des procédures stockées</li>
-                    <li>Maintenance corrective et évolutive</li>
-                    <li>Documentation technique</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 text-right">
-                  <ul class="list-inline item-details">
-                    <li>Employeur:
-                      <strong><a href="http://lms.com">LMS International</a> rachetée par <a href="https://www.plm.automation.siemens.com">Siemens PLM</a>
-                      </strong>
-                    </li>
-                    <li>Domaine:
-                      <strong>Editeur de logiciel dans le secteur Automobile
-                      </strong>
-                    </li>
-                    <li>Poste:
-                      <strong>Ingénieur de développement .Net
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>Dates : Mars 2014 - Aout 2016 (2,5 ans)
-                      </strong>
-                    </li>
-                    <li>Environnement technique:
-                      <strong> Framework .Net 4.5 ; Visual Studio 2010 et 2013 C# (WinForm, ASP .Net, Web Services),SQL Server 2008 R2, SAP Crystal Report, TFS, JIRA.
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 text-left">
-                  <ul class="item-details">
-                    <li>Développement de projet (client lourd et web services) et nouvelles fonctionnalités</li>
-                    <li>Maintenance corrective et évolutive des projets</li>
-                    <li>Documentation technique</li>
-                    <li>Développement en mode Agile (sprint)</li>
-                    <li>Reporting avec SAP Crystal Report, Report Builder</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 text-right">
-                  <ul class="list-inline item-details">
-                    <li>Employeur:
-                      <strong><a href="www.univ-reims.fr">Université de Reims</a> en partenariat avec <a href="https://www.plymouth.fr">Plymouth</a>
-                      </strong>
-                    </li>
-                    <li>Domaine:
-                      <strong>Informatique industrielle et traitement du signal
-                      </strong>
-                    </li>
-                    <li>Poste:
-                      <strong>Doctorant
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>Dates : Janvier 2003 - Novembre 2006 (environ 4 ans)
-                      </strong>
-                    </li>
-                    <li>Environnement technique:
-                      <strong> Matlab, C/C++ Builder, Mathematica
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 text-left">
-                  <ul class="item-details">
-                    <li>Sujet de la thèse : Modélisation, conception et réalisation d’un capteur à courants de Foucault pour l’identification de canalisations enterrées à 1 mètre de profondeur</li>
-                    <li>Publications, articles et revues <a href="https://www.ieee.org">IEEE</a> en anglais</li>
-                    <li>Participation à des conférences internationales: Islande, Luxembourg, Tunisie</li>
-                    <li>Thèse doctorale (environ 200 pages) <a href="http://www.theses.fr/2006REIMS011">Ici</a></li>
-                    <li>Chargé de travaux dirigés et travaux pratiques en Algorithmique et programmation en C </li>
-                  </ul>
-                </div>
-              </div>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="modal-body">
-              <h2>Formation</h2>
-              <hr class="star-primary">
-              <img src="img/portfolio/graduation.png" class="img-responsive img-centered  flatIcon" alt="">
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Organisme :</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="modal-body">
+                <h2>Formation</h2>
+                <hr class="star-primary">
+                <img src="img/portfolio/graduation.png" class="img-responsive img-centered  flatIcon" alt="">
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Organisme :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Autour du Némérique au Perray en Yvelines <a href="http://www.adnpy.fr">ADNPY</a>, en collaboration avec <a href="http://www.webforce3.com">Webforce3</a></p>
+                  </div>
                 </div>
-                <div class="col-lg-6 text-left">
-                  <p>Autour du Némérique au Perray en Yvelines <a href="http://www.adnpy.fr">ADNPY</a>, en collaboration avec <a href="http://www.webforce3.com">Webforce3</a></p>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Intitulé :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Intégrateur - Développeur Web</p>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Dates :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left formation-detail">
+                    <p>Septembre - Décembre 2016 (environ 4 mois)</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Organisme :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p><a href="http://www.apollo-formation.com">APOLLO Formation</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Intitulé :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Microsoft Business intelligence : SSAS, SSIS et SSRS</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Dates :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <h5>Novembre 2012 : durée (1 semaine) </h5>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Organisme :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p><a href="www.univ-reims.fr">Université de Reims Champagne Ardenne</a> en collaboration avec <a href="www.ens-cachan.fr/">ENS Cachan</a>, en partenariat avec <a href="https://www.plymouth.fr">Plymouth</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Intitulé de la thèse :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Modélisation et conception d'un capteur à courants de Foucault intelligent pour l'identification de canalisations enterrées</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Dates :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Janvier 2003 - Novembre 2006 (environ 4 ans) </p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Organisme :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p><a href="www.univ-reims.fr">Université de Reims Champagne Ardenne</a> en collaboration avec <a href="www.utt.fr/">Université de technologie de Troyes</a> et l'<a href="https://www.telecom-sudparis.eu">INT Evry</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Intitulé :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>DEA en Traitement de l’Information et Organisation dans les Réseaux, les systèmes Industriels et Coopératifs</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 text-right">
+                    <h4>Dates :</h4>
+                  </div>
+                  <div class="col-lg-6 text-left">
+                    <p>Année scolaire 2001 - 2002</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
               </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Intitulé :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>Intégrateur - Développeur Web</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Dates :</h4>
-                </div>
-                <div class="col-lg-6 text-left formation-detail">
-                  <p>Septembre - Décembre 2016 (environ 4 mois)</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Organisme :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p><a href="http://www.apollo-formation.com">APOLLO Formation</a></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Intitulé :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>Microsoft Business intelligence : SSAS, SSIS et SSRS</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Dates :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <h5>Novembre 2012 : durée (1 semaine) </h5>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Organisme :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p><a href="www.univ-reims.fr">Université de Reims Champagne Ardenne</a> en collaboration avec <a href="www.ens-cachan.fr/">ENS Cachan</a>, en partenariat avec <a href="https://www.plymouth.fr">Plymouth</a></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Intitulé de la thèse :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>Modélisation et conception d'un capteur à courants de Foucault intelligent pour l'identification de canalisations enterrées</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Dates :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>Janvier 2003 - Novembre 2006 (environ 4 ans) </p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Organisme :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p><a href="www.univ-reims.fr">Université de Reims Champagne Ardenne</a> en collaboration avec <a href="www.utt.fr/">Université de technologie de Troyes</a> et l'<a href="https://www.telecom-sudparis.eu">INT Evry</a></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Intitulé :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>DEA en Traitement de l’Information et Organisation dans les Réseaux, les systèmes Industriels et Coopératifs</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 text-right">
-                  <h4>Dates :</h4>
-                </div>
-                <div class="col-lg-6 text-left">
-                  <p>Année scolaire 2001 - 2002</p>
-                </div>
-              </div>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Compétences</h2>
-              <hr class="star-primary">
-              <img src="img/portfolio/competence.png" class="img-responsive img-centered  flatIcon" alt="">
-              <h4>Langages</h4>
-              <!-- PHP + HTML5-->
-              <div class="row">
-                <!-- PHP-->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Compétences</h2>
+                <hr class="star-primary">
+                <img src="img/portfolio/competence.png" class="img-responsive img-centered  flatIcon" alt="">
+                <div class="row">
+                  <div class="col-sm-6 text-center">
+                    <div id="css" class="competence">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 text-center">
+                    <div id="js"  class="competence">
+                    </div>
+                  </div>
+                </div>
+                <h4>Langages</h4>
+                <!-- PHP + HTML5-->
+                <div class="row">
+                  <!-- PHP-->
+                  <div class="col-sm-6">
+                    <h5>PHP</h5>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+                <!-- HTML5-->
                 <div class="col-sm-6">
-                  <h5>PHP</h5>
+                  <h5>HTML 5</h5>
                   <div class="progress">
                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -630,9 +650,11 @@
                   </div>
                 </div>
               </div>
-              <!-- HTML5-->
+            </div>
+            <!-- JS-->
+            <div class="row">
               <div class="col-sm-6">
-                <h5>HTML 5</h5>
+                <h5>Javascript</h5>
                 <div class="progress">
                   <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
                   aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -640,52 +662,49 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- JS-->
-          <div class="row">
             <div class="col-sm-6">
-              <h5>Javascript</h5>
+              <h5>JQUERY</h5>
               <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                70%
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                60%
               </div>
             </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col-sm-6">
-            <h5>JQUERY</h5>
+            <h5>AJAX</h5>
             <div class="progress">
               <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-              60%
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+              50%
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-sm-6">
-          <h5>AJAX</h5>
+          <h5>.</h5>
           <div class="progress">
             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-            50%
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+            0%
           </div>
         </div>
       </div>
+    </div>
+    <!-- angular-->
+    <div class="row">
       <div class="col-sm-6">
-        <h5>.</h5>
+        <h5>Angular JS</h5>
         <div class="progress">
           <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-          0%
+          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+          50%
         </div>
       </div>
     </div>
-  </div>
-  <!-- angular-->
-  <div class="row">
     <div class="col-sm-6">
-      <h5>Angular JS</h5>
+      <h5>Angular</h5>
       <div class="progress">
         <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
@@ -693,15 +712,6 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <h5>Angular</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-      50%
-    </div>
-  </div>
-</div>
 </div>
 <!-- RegEx+ Linq-->
 <div class="row">
@@ -1062,6 +1072,7 @@
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+<script src="vendor/percentageloader/js/jquery.percentageloader-0.1.min.js"></script>
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
@@ -1069,6 +1080,7 @@
 <!-- Theme JavaScript -->
 <script src="js/freelancer.min.js"></script>
 
+<script src="js/script.js"></script>
 </body>
 
 </html>
