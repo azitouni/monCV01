@@ -1,9 +1,9 @@
 $(function() {
-  var $css = $("#css").percentageLoader({width: 256, height: 256, controllable : true, progress : 0.6, onProgressUpdate : function(val) {
+  var $css = $("#css").percentageLoader({width: 192, height: 192, controllable : true, progress : 0.6, onProgressUpdate : function(val) {
     $css.setValue(Math.round(val * 100.0));
   }});
   $css.setValue('CSS');
-  var $js = $("#js").percentageLoader({width: 256, height: 256, controllable : true, progress : 0.35, onProgressUpdate : function(val) {
+  var $js = $("#js").percentageLoader({width: 192, height: 192, controllable : true, progress : 0.35, onProgressUpdate : function(val) {
     $js.setValue(Math.round(val * 100.0));
   }});
   $js.setValue('Javascript');
