@@ -37,7 +37,9 @@ label,placeholder, .myName,.myJob{
 .backTransparent{
   background-color: transparent;
 }
-
+.modal-body{
+  font-size: 2rem;
+}
 hr.style13 {
 	height: 10px;
 	border: 0;
